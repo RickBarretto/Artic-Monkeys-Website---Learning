@@ -1,0 +1,30 @@
+:root {
+    /* Pallete */
+    --green: #116530;
+    --blue: #21B6A8;
+    --blue-overlay: #21b6a783;
+    --neon: #A3EBB1;
+    --kelly: #18A558;
+    --kelly-overlay: #18a55731;
+    --white: #fff;
+    --black: #000;
+    --black-overlay: rgba(0, 0, 0, 0.808);
+    --black-overlay-2: rgba(0, 0, 0, 0.918);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background: var(--kelly);
+    color: var(--black);
+}

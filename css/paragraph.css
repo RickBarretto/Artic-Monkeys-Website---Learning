@@ -1,0 +1,30 @@
+/* Paragraph */
+p {
+    text-align: justify;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+p > a {
+    position: relative;
+    color: var(--neon);
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1;
+    display: inline-block;
+    line-height: 5px;
+    transition: transform ease .2s;
+}
+p > a:hover {
+    transform: translateY(-2px);
+}
+p > a::after{
+        content: "";
+        display: block;
+        width: auto;
+        height: 5px;
+        background: var(--green);
+        position: relative;
+        bottom: 0px;
+        z-index: -1;
+}

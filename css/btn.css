@@ -1,0 +1,69 @@
+/* Button */
+.btn>a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: transform ease .2s;
+}
+.btn>a:hover{
+    transform: translateY(-2px);
+}
+.btn {
+    padding: .45rem 1rem;
+    background-color: var(--kelly);
+    background: linear-gradient(45deg, var(--kelly) 0%, var(--blue) 100%);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px var(--black-overlay);
+    transition: transform ease .2s,
+        box-shadow ease .2s,
+        background ease .2s;
+}
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--black-overlay);
+    background: linear-gradient(45deg, #18a558, #21b6a8);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 1.5s ease infinite;
+    -moz-animation: AnimationName 1.5s ease infinite;
+    -o-animation: AnimationName 1.5s ease infinite;
+    animation: AnimationName 1.5s ease infinite;
+
+}
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        padding: .45rem 1rem;
+        border: none;
+        border-radius: 8px;
+
+        box-shadow: 0 10px 30px var(--black-overlay);
+        background: linear-gradient(45deg, #18a558, #21b6a8);
+        background-size: 400% 400%;
+    
+        -webkit-animation: BtnAmin 1.5s ease infinite;
+        -moz-animation: BtnAmin 1.5s ease infinite;
+        -o-animation: BtnAmin 1.5s ease infinite;
+        animation: BtnAmin 1.5s ease infinite;
+    } 
+}
+@-webkit-keyframes BtnAmin {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+@-moz-keyframes BtnAmin {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+@-o-keyframes BtnAmin {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+@keyframes BtnAmin {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
