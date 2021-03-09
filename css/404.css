@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
-    background: linear-gradient(47deg, white, #b8b8b8);
+    background: linear-gradient(47deg, var(--white), var(--gray));
 }
 
 .container > .background > .content > .top {

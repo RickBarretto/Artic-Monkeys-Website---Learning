@@ -808,6 +808,7 @@ main > .start > .cover-overlay > div{
     gap: 0;
     border-radius: 0 2rem 0 2rem;
     overflow: hidden;
+    transition: all 2s ease;
 }
 .discography > div > section > figure > img{
     width: 15rem;
@@ -816,15 +817,23 @@ main > .start > .cover-overlay > div{
     object-position: center;
     align-self: center;
     justify-self:end;
+    filter: grayscale(1);
+}
+.discography > div > section > figure:hover > img{
+    filter: grayscale(0);
 }
 .discography > div > #tranquility > figure > img{
+    object-position: -1.4rem;
+}
+.discography > div > #tranquility > figure:hover > img{
     object-position: -1.4rem;
 }
 
 .discography > div > section > figure > figcaption{
     background: linear-gradient(-56deg,
-    var(--blue), var(--kelly));
+    var(--black), var(--gray));
     height: 100%;
+    transition: all .5s ease;
 
     display: grid;
     grid-template-rows: 2fr repeat(3, 1fr);
@@ -833,6 +842,10 @@ main > .start > .cover-overlay > div{
 
     padding: .5rem .5rem;  
     padding-bottom: 0;  
+}
+.discography > div > section > figure:hover > figcaption{
+    background: linear-gradient(-56deg,
+    var(--green), var(--blue));
 }
 .discography > div > section > figure > figcaption > p{
     color: var(--white);
