@@ -267,6 +267,26 @@ body{
 
 }
 
+/* ----------  CHECKPOIT-TITLES  ---------- */
+main > section > header{
+    height: 6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+}
+main > section > header > h2 {
+    color: var(--black);
+    font-size: 3rem;
+    white-space: nowrap;
+    margin: 0 1rem;
+}
+main > section > header > div {
+    background-color: var(--black);
+    height: 5px;
+    width: 100%;
+}
 
 /* ----------  CHECKPOIT-START  ---------- */
 /* Container */
@@ -454,6 +474,7 @@ main > .start > .cover-overlay > div{
     grid-template-rows: repeat(5, 1fr);
     justify-content: stretch;
     align-items: stretch;
+    overflow: hidden;
 }
 
 .members > article{
@@ -631,7 +652,7 @@ main > .start > .cover-overlay > div{
     font-size: 3rem;
     float: left;
     padding-top: 0;
-    line-height: 2.6rem; 
+    line-height: 2rem; 
 }
 .history > article > div > p:first-child{
     padding-bottom: 1rem;
@@ -643,6 +664,10 @@ main > .start > .cover-overlay > div{
     content: "";
     display: inline-block;
     width: 1.2rem;
+}
+
+.history > article > div > p:last-child{
+    padding-bottom: 2rem;
 }
 
 .history > div > img{
@@ -765,28 +790,6 @@ main > .start > .cover-overlay > div{
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.discography > header{
-    background: var(--white);
-    height: 6rem;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-.discography > header > span {
-    text-align: center;
-    position: relative;
-    text-align: center;
-    font-size: 3rem;
-    background-color: var(--white);
-    font-weight: bold;
-    margin: 0 1rem;
-}
-.discography > header > div{
-    height: 5px;
-    width: 100%;
-    background-color: var(--black);
 }
 
 
@@ -920,17 +923,309 @@ main > .start > .cover-overlay > div{
     filter: brightness(0) invert(0);
 }
 
-
-/* .discography > div > section > figure > figcaption > a:nth-child(2) > button::before {
-    background: var(--green);
-} */
-
-
 .discography > div > section > figure > figcaption > div {
     width: 100%;
     height: 2rem;
     border: 0;
 }
+
+/* ----------  CHECKPOIT-AWARDS  ---------- */
+
+.awards > section > .cover{
+    background: var(--black-overlay);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center ;
+    justify-items: start;
+    padding: 2rem 3rem;
+    backdrop-filter: blur(5px);
+}
+
+.awards > section > .cover > article > header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.awards > section > .cover > article > header > span {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.awards > section > .cover > article > span{
+    font-size: 2rem;
+}
+.awards > section > .cover > article > ul{
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+    list-style:circle;
+    border-left: 2px solid var(--white);
+    margin-left: 1rem;
+}
+.awards > section > .cover > article > div{
+    width: 3rem;
+    height: 1rem;
+    border-bottom: 2px solid var(--white);
+    border-left: 2px solid var(--white);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.awards > section > .cover > article > ul > li{
+    font-size: 1.2rem;
+}
+.awards > section > .cover > article > ul > li > span{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.awards > section > .cover > article > ul > li > span::after{
+    content: ": ";
+    white-space: pre;
+    display: inline-block;
+}
+
+.awards > section > .cover > .img-cont{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.awards > section > .cover > .img-cont > img{
+    width: 70%;
+    height:auto;
+    align-self: center;
+    filter: brightness(1.2);
+}
+.awards > section > .cover > .img-cont > div{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+}
+
+.awards > .brit {
+    background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.stereogum.com%2Fblogs.dir%2F2%2Ffiles%2F2014%2F02%2Farctic-monkeys_brit-awards.jpg&f=1&nofb=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.awards > .gaffa {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.gaffa.dk%2Fimages%2F2011%2F06%2F27%2Ff5f06%2F76099-860x484.jpg&f=1&nofb=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.awards > .gaffa > .cover > .img-cont > img{
+    background-color: var(--white);
+    position: relative;
+}
+.awards > .grammy {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe3.365dm.com%2F18%2F01%2F768x432%2Fskynews-arctic-monkeys-band_4203286.jpg%3F20180111164151&f=1&nofb=1);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.awards > .nme {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.images.express.co.uk%2Fimg%2Fdynamic%2F79%2F590x%2FArctic_Monkeys_NME_Awards_Alex_Turner-462030.jpg&f=1&nofb=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.awards > div{
+    background-color: var(--white);
+    height: 2rem;
+    box-shadow: inset 0 0 .6rem var(--black);
+}
+
+.awards > .nme > .cover {
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 864px)
+{
+    .awards > section > .cover{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-items: start;
+        padding: 2rem 3rem;
+    }
+
+    .awards > section > .cover > .img-cont{
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 0 5rem black;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    .awards > section > .cover{
+        padding: 2rem 1rem;
+    }
+}
+/* ----------  CHECKPOIT-ABOUT  ---------- */
+.wave-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    align-content: stretch;
+    transform: translateY(-5rem);
+    mix-blend-mode: lighten;
+    height: 10rem;
+}
+.wave-container > .wave {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.etsystatic.com%2F15828741%2Fr%2Fil%2F52392d%2F1287493760%2Fil_794xN.1287493760_6xmt.jpg&f=1&nofb=1);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 50rem;
+}
+
+.wave-container > .side{
+    width: 100%;
+    height: 5px;
+    background-color: var(--white);
+}
+
+.about{
+    background: linear-gradient(to bottom, var(--black) 0%, transparent 40%),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2018%2F09%2F26%2F549255-arctic-monkeys-indie-rock-psychedelic-garage-punk-arctic-monkeys-748x421.jpg&f=1&nofb=1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 25rem;
+    z-index: -1;
+    transform: translateY(-8rem);
+}
+
+.about > div{
+    background: var(--black-overlay);
+    height: 100%;
+    min-height: 25rem;
+    backdrop-filter: blur(10px);
+}
+
+.about > div > article{
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    padding-bottom: 0;
+}
+
+.about > div > article > header > h2{
+    font-size: 3rem;
+    color: var(--white);
+
+}
+
+.about > div > article > .content{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 2rem 0rem;
+    margin: 0 2rem;
+    border: .3rem solid white;
+    border-top: 0;
+    border-right: 0;
+}
+
+.about > div > article > .content > .text{
+    max-width: 25rem;
+}
+
+.about > div > article > .content > .official{
+    display: flex;
+    width: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.about > div > article > .content > .official > img{
+    width: 13rem;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
+.about > div > article > .contact {
+    margin: 0 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-evenly;
+    gap: 1rem;
+    padding: 4rem 0;
+    border: .3rem solid white;
+    border-top: 0;
+    border-left: 0;
+}
+.about > div > article > .contact > .links{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.about > div > article > .contact > .links > a{
+    text-decoration: none;
+}
+.about > div > article > .contact > .links > a > button{
+    background: transparent;
+    color: var(--white);
+    font-weight: bold;
+    padding: .7rem 3rem;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    box-shadow: 0 10px 10px var(--black-overlay);
+    transition: transform ease .2s,
+        box-shadow ease .2s,
+        background ease .2s;
+    display: flex;
+    align-items: center;
+}
+
+.about > div > article > .contact > .links > a > button > span{
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.about > div > article > .contact > .links > a > button > svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.about > div > article > .contact > .links > a > button:hover{
+    background: var(--white);
+    color: var(--black);
+    transform: translateY(-2px);;
+}
+
+.about > div > article > .contact > h2{
+    color: white;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.about > div > article > .bottom{
+    margin: 0 2rem;
+    border-left: .3rem solid white;
+    height: 1rem;
+    width: 100%;
+}
+
 
 
 
