@@ -929,6 +929,17 @@ main > .start > .cover-overlay > div{
     border: 0;
 }
 
+@media (hover: none) and (pointer: coarse){
+    .discography > div > section > figure > img{
+        filter: grayscale(0);
+    }
+
+    .discography > div > section > figure > figcaption{
+        background: linear-gradient(-56deg,
+        var(--green), var(--blue));
+    }
+}
+
 /* ----------  CHECKPOIT-AWARDS  ---------- */
 
 .awards > section > .cover{
@@ -1144,6 +1155,7 @@ main > .start > .cover-overlay > div{
 
 .about > div > article > .content > .text{
     max-width: 25rem;
+    padding-left: 2rem;
 }
 
 .about > div > article > .content > .official{
@@ -1153,7 +1165,6 @@ main > .start > .cover-overlay > div{
     justify-content: center;
     justify-items: center;
 }
-
 
 .about > div > article > .content > .official > img{
     width: 13rem;
@@ -1224,6 +1235,64 @@ main > .start > .cover-overlay > div{
     border-left: .3rem solid white;
     height: 1rem;
     width: 100%;
+}
+
+@media screen and (max-width: 767px)
+{
+    .about > div > article > .contact {
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .about > div > article{
+        padding: 2rem 1rem;
+        padding-bottom: 0;
+    }
+
+    .about > div > article > .content,
+    .about > div > article > .contact,
+    .about > div > article > .bottom{
+        margin: 0;
+    }
+
+
+    .about > div > article > .content > .official{
+        display: flex;
+        width: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .about > div > article > .content > .official > img{
+        width: 9rem;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:540px)
+{
+    .about > div > article > .content{
+        display: flex;
+        flex-flow: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    .about > div > article > .contact > .links{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 }
 
 
