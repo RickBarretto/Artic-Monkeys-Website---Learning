@@ -12,6 +12,10 @@
 body{
     background: #000;
 }
+
+.chackpoint {
+    transform: translateY(-48px);
+}
 /* ----------  CHECKPOIT-HEADER  ---------- */
 
 .main-header{
@@ -49,6 +53,7 @@ body{
 }
 
 /* Nav links */
+
 .main-header-container > ul > li{
     display: inline-block;
     margin: 0 1rem;
@@ -118,6 +123,7 @@ body{
         display: flex;
         height: 100%;
         width: 100%;
+        list-style: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1295,27 +1301,45 @@ main > .start > .cover-overlay > div{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------  CHECKPOIT-FOOTER  ---------- */
-footer {
-    height: 400vh;
+.main-footer > section{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
+.main-footer > section > .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 5rem;
+}
 
+.main-footer > section > .content > h3{
+    font-size: 2rem;
+}
+
+.main-footer > section > .content > p{text-align: center;}
+
+.main-footer > section > header{
+    height: 6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--kelly);
+    justify-content: center;
+    align-items: center;
+}
+.main-footer > section > header > h2 {
+    font-size: 3rem;
+    white-space: nowrap;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.main-footer > section > header > div {
+    background-color: var(--black);
+    height: 5px;
+    width: 100%;
+}
 
